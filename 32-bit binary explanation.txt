@@ -1,0 +1,43 @@
+32-bits all flipped to 1 plus a null terminator
+
+32 - 4, 294, 967, 296 <--- just place values (can't exceed this number)
+31 - 2, 147, 483, 648 <--- just place values --- Summing Total: 4, 294, 967, 295
+30 - 1,073,741,824 <--- just place values
+29 - 536,870,912 <--- just place values
+
+28 - 268,435,456 <--- just place values
+27 - 134,217,728 <--- just place values
+26 - 67,108,864 <--- just place values
+25 - 33,554,432 <--- just place values
+
+24 - 16,777,216 <--- just place values
+23 - 8,388,608 <--- just place values
+22 - 4,194,304 <--- just place values
+21 - 2,097,152 <--- just place values
+
+20 - 1,048,576 <--- just place values
+19 - 524,288 <--- just place values
+18 - 262,144 <--- just place values
+17 - 131,072 <--- just place values
+
+16 - 65,536 <--- just place values
+15 - 32,768 <--- just place values
+14 - 16,384 <--- just place values
+13 - 8,192 <--- just place values
+
+12 - 4096 <--- just place values
+11 - 2048 <--- just place values
+10 - 1024 <--- just place values
+9 - 512 <--- just place values
+
+8 - 256 <--- just place values
+7 - 128 <--- just place values
+6 - 64 <--- just place values
+5 - 32 <--- just place values
+4 - 16 <--- just place values
+
+4 - 8 <--- just place values
+3 - 4 <--- just place values
+2 - 2 <--- just place values
+1 - 1 <--- just place values 
+
