@@ -1,0 +1,70 @@
+﻿0.  TODO: What is pneumonoultramicroscopicsilicovolcanoconiosis?
+
+Longest word in the english dictionary
+
+
+
+1.  TODO: According to its man page, what does getrusage do?
+
+It takes a snapshot of usage statistics by measuring performance in this environment and returning the values into a struct.
+
+
+
+2.  TODO: Per that same man page, how many members are in a variable of type struct rusage?
+
+16
+
+
+
+3.  TODO: Why do you think we pass before and after by reference (instead of by value) to calculate, even though we’re not changing their contents?
+
+When you pass a data type to a function by reference using pointers, you take away the burden that comes with managing and returning copied versions of the data type.
+
+
+
+4.  TODO: Explain as precisely as possible, in a paragraph or more, how main goes about reading words from a file. In other words, convince us that you indeed understand how that function’s for loop works.
+
+- int main(int arc, char* argv[]) is a special name and function that indicates where the program is to begin execution. Files must be opened within this function.
+- A data structure known as a FILE* is used as a return type to be typically used as a pointer when opening a file. It probably points to the block of memory that
+contains the file. This pointer comes along with several different functions that are used one a time to create a communication channel between the block of memory 
+containing the file and the pointer to read n data one at a time using a for loop in a single read.
+
+
+
+5.  TODO: Why do you think we used fgetc to read each word’s characters one at a time rather than use fscanf with a format string like "%s" to read whole words at a time? Put another way, what problems might arise by relying on fscanf alone?
+
+fgetc puts more responsbility on the developer to predict the type of data that's being read into the program. It doesn't make any assumptions about what should be read
+besides the data type you declared.
+
+
+
+6.  TODO: Why do you think we declared the parameters for check and load as const?
+
+To take away the develpors ability to influence the files from which they are reading.
+
+
+
+7.  TODO: What data structure(s) did you use to implement your spell-checker? Be sure not to leave your answer at just "hash table," "trie," or the like. Expound on what’s inside each of your "nodes."
+
+Hash table using separate chaining as an array of pointers each declared by node structs. 
+Each node struct in the array of pointers marks the beginning of a singly linked list.
+
+Each node structs contains two members, a pointer to a char member anticipating a dictionary value and a pointer to the struct node anticipating an additional node.
+
+
+
+8.  TODO: How slow was your code the first time you got it working correctly?
+TIME IN TOTAL: 3.53 seconds.
+
+
+
+
+9.  TODO: What kinds of changes, if any, did you make to your code in order to improve its performance?
+Haven't made improvements due to the time spent getting it to work the first time.
+
+
+
+
+10. TODO: Do you feel that your code has any bottlenecks that you were not able to chip away at?
+
+Adding an additional node prob creates a bottleneck because I added nodes to the end of the list instead of the beginning or head of the list.

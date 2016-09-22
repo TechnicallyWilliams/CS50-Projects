@@ -1,0 +1,165 @@
+﻿0.  TODO
+1.  TODO
+2.  TODO
+3.  TODO
+4.  TODO
+5.  TODO
+6.  TODO
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO
+11. TODO
+12. TODO
+13. TODO
+14. TODO
+15. TODO
+16. TODO
+17. TODO
+18. TODO
+
+
+// How many different colors does BMP, GIF, JPEG, and PNG support?
+
+BMP: 4.3 billion or 16 mill
+GIF: 256
+JPEG: 255
+PNG: 16 million
+
+
+
+
+// Which of the formats supports animation?
+
+GIF
+
+
+
+
+// What's the difference between lossy and lossless compression?
+
+lossy algorithms accept some degradation in the image in order to achieve smaller file size.
+A lossless compression algorithm discards no information.
+
+
+
+
+// What of these formats is lossy-compressed?
+
+JPEG’s algorithm
+
+
+
+
+// What happens, technically speaking, when a file is deleted on a FAT file system?
+
+It rewrites the metadata that points to that file but leaves the disk blocks containing the file’s content intact. 
+The file’s fat clusters aka disk blocks are then moved to the hard drive’s list of FREE clusters.
+
+
+
+
+// What can someone like you do to ensure (with high probability) that files you delete cannot be recovered?
+
+Physically destroy the drive
+Overwrite the drive's data with ASCII null value
+Encrypt the files and throw away the key before retiriing the hard drive.
+
+
+
+
+// What’s stdint.h?
+
+def 1: stdint.h is a header file in the C standard library that allows programmers to write more portable code by providing a set of typedefs
+that specify exact-width integer types, 
+
+def 2: Library for Fixed-width integral types (stdint.h)
+
+
+
+
+// What’s the point of using uint8_t, uint32_t, int32_t, and uint16_t in a program?
+
+To create an interfacing data structure buffer for which the bytes of standardized files like bitmap can integrate into a program.
+
+Ex. An array of primitive data types is the typical arrangement. 
+
+
+
+
+// How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively?
+
+typedef uint8_t  BYTE; ---> unsigned char      1 
+byte
+typedef uint32_t DWORD; --->  unsigned int     4 
+bytes
+typedef int32_t  LONG; ----> int,              4 
+bytes
+typedef uint16_t WORD; ----> unsigned short    2 bytes
+
+
+
+
+// What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? 
+(Leading bytes used to identify file formats (with high probability) are generally called "magic numbers.)"
+
+A unsigned short bfType of 0x4d42 Or 19778.
+
+
+
+
+// What’s the difference between bfSize and biSize?
+
+biSize is the number of bytes required by the structure. (excluding fileheader storage and maybe more)
+bfSize is the size, in bytes, of the bitmap file. (14 + 40) + (l x w + 3) +  (padding x height)
+
+
+
+
+// What does it mean if biHeight is negative?
+
+The bitmap will be read top-down and it's origin in the upper-left corner. 
+This will need to be taken into account during resizing operations.
+
+
+
+
+
+// What field in BITMAPINFOHEADER specifies the BMP’s color depth (i.e., bits per pixel)?
+
+biBitCount
+
+
+
+
+// Why might fopen return NULL in copy.c:37?
+
+The file isn't there.
+
+
+
+
+// Why is the third argument to fread always 1 in our code?
+
+Because we only want to read into one pixel at a time.
+
+
+
+
+// What value does copy.c:70 assign padding if bi.biWidth is 3?
+
+1 because adding one will create a number that is a multiple of 4 per bitmap conventions.
+
+
+
+
+// What does fseek do?
+
+Changes the offset of the file pointer fp so that you can begin looking at another row of pixels aka scanlines.
+
+
+
+
+// What is SEEK_CUR?
+
+It's an argument in fseek used to give you a starting pointer or reference pointer from which to start moving.
