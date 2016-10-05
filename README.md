@@ -1,7 +1,8 @@
 # CS50 Projects
 
 # Week 4
-resize - Wrote a program called resize that resizes 24-bit uncompressed BMPs by a factor of n. 
+resize - Wrote a program called resize that resizes 24-bit uncompressed BMPs by a factor of n.
+
 recover - Wrote a program that recovers JPEGs
 
 # Week 6
