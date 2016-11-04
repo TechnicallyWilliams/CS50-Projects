@@ -1,0 +1,53 @@
+﻿<div>
+
+
+    <div class="row clearfix">
+        <div class="col-md-12 column" style="margin: 0px; padding: 0px; border: 0px;">
+            <div class="jumbotron well" style="background-color:cornflowerblue">
+
+                <img src="Images/SogoLogo.png" alt="SogoLogo" height="200" width="200" class="img-circle" />
+                <span style="font-size:32px; font-family:'Comic Sans MS'">"Looking for a sound logo?!"</span>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row clearfix">
+        <div class="col-md-3 column"></div>
+        <div class="col-md-4 column text-center" style="color: black">
+            <h4 style="font-family:'Comic Sans MS'">{{name}}</h4>
+
+            <button style="outline: 0" class="img-circle" ng-click="playAudio(audio)">
+                <img src={{image}} alt={{name}} height="300" width="300" class="img-circle" />
+            </button>
+            <audio hidden id="{{audio}}" controls>
+                <source src={{audio}} type="audio/wav"><!--Need to pull this from the backend-->
+                Your browser does not support the audio element.
+            </audio>
+
+        </div>
+
+
+        <div class="col-md-5 column" style="margin-top: 50px; color: black" id="welcomeFrame">
+            <div id="loginFrame">
+                <form ng-submit="login()">
+                    <label for="username">User Name</label>
+                    <input class="form-control" id="username" name="username" ng-model="username" type="text" placeholder="Username....." autofocus />
+
+                    <label for="password">Password</label>
+                    <input class="form-control" id="password" name="password" ng-model="password" type="password" placeholder="*....*" />
+                    <span><input id="loginButton" class="btn btn-primary" type="submit" value="Login" /></span>
+                </form>
+                <div>
+                    <h4>Register Now!</h4>
+                    <a href="#/register">Click here to register and start creating custom SOGOS today!</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

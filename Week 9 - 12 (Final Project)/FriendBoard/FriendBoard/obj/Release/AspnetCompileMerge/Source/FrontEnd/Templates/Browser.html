@@ -1,0 +1,142 @@
+﻿<div ng-controller="SchoolController">
+
+    <div class="row">
+        <form name="schoolForm" style="margin-left: 75px;">
+            <label>Find Your School</label>
+
+            <select ng-model="chosenSchool" style="color:black; font-weight:bold; border: 5px solid black">
+                <option ng-repeat="s in schools" value="{{s.schoolID}}">{{s.schoolName}}</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary" style="margin-left: 75px;" ng-click="getSchool()">Choose a school!</button>
+        </form>
+
+        <div style="margin-left: 75px; color: black; border: 5px solid black" ng-show="selectedSchool.schoolName">
+
+            <p>{{selectedSchool.schoolName}}</p><p>{{selectedSchool.schoolType}}</p><p>{{selectedSchool.schoolWebsite}}</p><p>{{selectedSchool.city}}</p><p>{{selectedSchool.state}}</p><p>{{selectedSchool.zipCode}}</p>
+
+        </div>
+
+    </div>
+
+    <!--for (var i in data.schoolProfiles) {
+    $scope.schoolProfiles.push(data.schoolProfiles[i]);
+
+    for (var j in data.schoolProfiles[i].kids) {
+    $scope.profileKids.push(data.schoolProfiles[i].kids[j]);
+
+    for (var k in data.schoolProfiles[i].lunches) {
+    $scope.profileLunches.push(data.schoolProfiles[i].lunches[k]);-->
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-4" style="color: black; font-weight:bold; border: 5px solid black">
+            <div style="color: black; font-weight:bold; border: 5px solid black" ng-repeat="p in selectedSchool.schoolProfiles">
+                <h1>USERS</h1>
+                <h4 style="display:inline-block">USERNAME</h4>
+                <p style="display:inline-block">{{p.userName}}</p><br />
+                <p style="display:inline-block">PROFILE TYPE </p>
+                <p style="display:inline-block">{{p.userType}}</p>
+
+                <ul>
+                    <li>phone: </li>
+                    <li>{{p.areaCode}}</li>
+                    <li>{{p.phone}}</li>
+
+                    <li>city:</li>
+                    <li>{{p.city}}</li>
+
+                    <li>state:</li>
+                    <li>{{p.state}}</li>
+
+                    <li>zip:</li>
+                    <li>{{p.zip}}</li>
+                </ul>
+                <button type="submit" class="btn btn-primary" style="margin-left: 75px;" ng-click="viewProfile(p.profileID)">View Profile</button>
+
+            </div>
+        </div>
+
+        <div class="col-md-8" style="color: black; font-weight:bold; border: 5px solid black" ng-hide="profileView">
+            <h1>PROFILE PAGE</h1>
+        </div>
+
+        <div class="col-md-8" style="color: black; font-weight:bold; border: 5px solid black" ng-show="profileView">
+            <h1>Profile</h1>
+            <div id="profileView" ng-show="profileView">
+                <div>
+                    <h3>Details</h3>
+                    <p>{{profile.userType}}</p>
+                    <p>{{profile.userName}}</p>
+                    <h4>Location</h4>
+                    <p>{{profile.city}}</p>
+                    <p>{{profile.state}}</p>
+                    <p>{{profile.zip}}</p>
+                    <h4>Schools</h4>
+                    <p>{{profile.highSchoolName.hsName}}</p>
+                    <p>{{profile.middleSchoolName.msName}}</p>
+                    <p>{{profile.elemntarySchoolName.esName}}</p>
+                </div>
+
+                <div>
+                    <h3>KIDS</h3>
+                    <div ng-repeat="k in profile.kids" style="color: black; border: 5px solid black; width: 200px; display:inline-block">
+                        <h4>Alias:</h4>
+                        <p>{{k.alias}}</p>
+
+                        <h4>Grade:</h4>
+                        <p>{{k.grade}}</p>
+
+                        <h4>Diet Type</h4>
+                        <p>{{k.dietType}}</p>
+
+                        <h4>School Name</h4>
+                        <p>{{k.schoolName}}</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>LUNCHES</h3>
+                    <div ng-repeat="l in profile.lunches" style="color: black; border: 5px solid black; width: 200px; display:inline-block">
+                        <h4>Name of Dish:</h4>
+                        <p>{{l.dishName}}</p>
+
+                        <h4>Description:</h4>
+                        <p>{{l.description}}</p>
+
+                        <h4>Price:</h4>
+                        <p>${{l.price}}</p>
+
+                        <h4>Total:</h4>
+                        <p>${{l.total}}</p>
+
+                        <h4>Requests:</h4>
+                        <p>{{l.reservations}}</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>MESSAGES</h3> <!--This makes no sense because i'm displaying the userName of the person it was sent to, not who created it-->
+                    <div ng-repeat="m in profile.messages" style="color: black; border: 5px solid black">
+                        <p>Date-time: {{m.dateCreated}}</p>
+                        <h3 style="display:inline-block">{{m.userName}}:</h3>
+                        <p style="display:inline-block">"{{m.message}}"</p>
+                    </div>
+                    <div>
+                        <form name="messages">
+                            <input type="text" name="comment" class="form-control" ng-model="newMessage" style="display:inline-block">
+                            <button type="submit" class="btn btn-primary" ng-click="submit(newMessage)" style="display:inline-block; border: 5px solid black">SEND A MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+

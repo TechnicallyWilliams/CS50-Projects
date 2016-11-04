@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Audio Recorder</title>
+
+</head>
+<body>
+    <div id="controls">
+        <img id="record" src="Images/mic128.png" onclick="toggleRecording(this);">
+        <a id="save" href="#"><img src="Images/save.svg"></a>
+    </div>
+    <div>
+        <button onclick="startListening()">Start Listening</button>
+        <button onclick="stopListening()">Stop Listening</button>
+    </div>
+
+    <audio controls>
+        <source src="Audio/myRecording00.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+
+</body>
+</html>

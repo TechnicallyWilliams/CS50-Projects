@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html ng-app="friendboard">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script src="~/FrontEnd/Scripts/recorder.js"></script>
+    <script src="~/FrontEnd/Scripts/main.js?n=1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style>
+        #record {
+            height: 4vh;
+        }
+
+            #record.recording {
+                background: red;
+                background: -webkit-radial-gradient(center, ellipse cover, #ff0000 0%,lightgrey 75%,lightgrey 100%,#7db9e8 100%);
+                background: -moz-radial-gradient(center, ellipse cover, #ff0000 0%,lightgrey 75%,lightgrey 100%,#7db9e8 100%);
+                background: radial-gradient(center, ellipse cover, #ff0000 0%,lightgrey 75%,lightgrey 100%,#7db9e8 100%);
+            }
+
+        #save, #save img {
+            height: 10vh;
+        }
+
+        #save {
+            opacity: 0.25;
+        }
+
+            #save[download] {
+                opacity: 1;
+            }
+
+        #fileInput {
+            position: absolute;
+            opacity: 1;
+        }
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 3; /* Sit on top */
+            left: 0;
+            top: 100px;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+
+        /* Modal Header */
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        /* Modal Body */
+        .modal-body {
+            padding: 2px 16px;
+        }
+
+        /* Modal Footer */
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 75%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        video.circle-avatar {
+            /* make it responsive */
+            max-width: 100%;
+            /* height: auto; */
+            display: block;
+            /* make it a cirkle */
+            border-radius: 50%;
+            /* Centering on image`s center*/
+            background-position-y: center;
+            background-position-x: center;
+            background-repeat: no-repeat;
+            /* it makes the clue thing, takes smaller dimention to fill div */
+            /*background-size: cover; */
+        }
+
+        canvas.circle-avatar {
+            /* make it responsive */
+            left: 200px;
+            display: block;
+            /* make it a cirkle */
+            border-radius: 50%;
+            /* Centering on image`s center*/
+            background-position-y: center;
+            background-position-x: center;
+            background-repeat: no-repeat;
+        }
+
+        img.circle-avatar {
+            /* make it responsive */
+            display: block;
+            /* make it a cirkle */
+            border-radius: 50%;
+            /* Centering on image`s center*/
+            background-position-y: center;
+            background-position-x: center;
+            background-repeat: no-repeat;
+        }
+
+        #aboutText {
+            font-size: 30px;
+            margin-top: 250px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+            #aboutText strong {
+                font-size: 2em;
+            }
+    </style>
+    <script src="~/FrontEnd/Scripts/Angular/angular-loader.js"></script>
+    <script src="~/FrontEnd/Scripts/Angular/angular.js"></script>
+    <script src="~/FrontEnd/Scripts/Angular/angular-route.js"></script>
+    <script src="~/FrontEnd/Scripts/Angular/angular-route.min.js"></script>
+
+    <script src="~/FrontEnd/Scripts/JS/App.js?n=1"></script>
+    <script src="~/FrontEnd/Services/SogoFactory.js"></script>
+    <script src="~/FrontEnd/Scripts/Controllers/IndexController.js"></script>
+    <script src="~/FrontEnd/Scripts/Controllers/RegisterController.js"></script>
+    <!--  loading mp3's way faster-->
+    <script src="https://www.html5rocks.com/en/tutorials/webaudio/intro/js/buffer-loader.js"></script>
+    <!--Trying to break caching-->
+    <script src="~/FrontEnd/Scripts/Controllers/SogoController.js?n=1"></script>
+    <script src="~/FrontEnd/Scripts/Controllers/AboutController.js"></script>
+    <script src="~/FrontEnd/Scripts/Controllers/ProfileController.js"></script>
+    <script src="~/FrontEnd/Scripts/Controllers/ReviewsController.js"></script>
+
+</head>
+<body style="margin-top: 5px; padding: 0px; border: 0px; background-color:darkgrey">
+
+    <nav role="navigation" class="navbar navbar-inverse" style="margin-top: 2px; padding: 0px; border: 0px;">
+        <div class="container-fluid" style="margin: 0px; border: 0px; height: 100px; font-size:28px; padding-top: 15px">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="font-size: 40px" href="#/"><em>SOGO</em></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li id="item1">
+                    <a href="#/about" id="aboutTab">about</a>
+                </li>
+                <li id="item2">
+                    <button id="signOutTab" class="hidden" onclick="logOut(this)">Log out</button>
+                </li>
+                <li>
+                    <a href="#/sogos" id="sogoTab" class="hidden">Sogo</a>
+                </li>
+                <li>
+                    <a href="#/profile" id="profileTab" class="hidden">profile</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#/" id="loginTab" class="">login</a>
+                </li>
+                <li>
+                    <a href="#/register" id="registerTab" class="">register</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    @RenderBody();
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("Scripts", required: false)
+    <script>
+
+        var logOut = function (value) {
+            if (value.id == "signOutTab") {
+                sessionStorage.clear();
+                location.replace(location.href.split('#')[0]);
+            }
+        }
+
+        var jsVersion = +document.getElementsByTagName('script')[2].src.slice(-1) + 1;
+       // document.getElementsByTagName('script')[2].src = null;
+       // document.getElementsByTagName('script')[8].src = null;
+       // document.getElementsByTagName('script')[13].src = null;
+       // document.getElementsByTagName('script')[2].src = 'http://sogos.azurewebsites.net/FrontEnd/Scripts/main.js?n=' + jsVersion;
+       // document.getElementsByTagName('script')[8].src = 'http://sogos.azurewebsites.net/Scripts/JS/App.js?n=' + jsVersion;
+        //document.getElementsByTagName('script')[13].src = 'http://sogos.azurewebsites.net/Scripts/Controllers/SogoController.js?n=' + jsVersion;
+
+    </script>
+
+
+    <footer>
+        <nav role="navigation" class="navbar navbar-inverse" style="margin-top: 2px; padding: 0px; border: 0px;">
+            <div class="container-fluid" style="margin: 0px; border: 0px; height: 100px; font-size:28px; padding-top: 15px">
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="font-size: 40px" href="#/"><em>SOGO</em></a>
+                </div>
+                <ul class="nav navbar-nav" style="padding-top: 20px">
+                    <li>
+                        <p style="font-size:12px; color:Highlight">Created by little-tiger, student of CS50, 2016'</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+
+</html>

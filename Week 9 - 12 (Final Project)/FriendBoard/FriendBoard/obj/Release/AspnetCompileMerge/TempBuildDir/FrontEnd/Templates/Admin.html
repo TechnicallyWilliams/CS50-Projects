@@ -1,0 +1,15 @@
+﻿<div class="row">
+    <div id="adminBox">
+        <div>
+            <h1>ACCOUNT VIEW</h1>
+            <h3>Auto-approved Profiles</h3>
+            <div ng-repeat="x in Profiles">
+                <table id="Profiles">
+                    <tr><td>{{x.dateCreated | date: 'medium'}}</td><td>{{x.profileID}}</td><td>{{x.userName}}</td><td>{{x.userType}}</td><td>{{x.eMail}}</td><td>{{x.amountTotal | currency}}</td></tr>
+                    <tr><td><button name="approval" ng-click="Delete(x.profileID)">Delete</button></td></tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>

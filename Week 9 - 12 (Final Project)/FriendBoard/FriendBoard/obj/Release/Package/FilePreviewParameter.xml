@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Sogos" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Program\ Files\ \(x86\)\\IIS\ Express\\FriendBoard\\FriendBoard\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Program\ Files\ \(x86\)\\IIS\ Express\\FriendBoard\\FriendBoard\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:q22a6qc72d.database.windows.net,1433;Initial Catalog=Sogos_db;Persist Security Info=True;User ID=wishheroadmin@q22a6qc72d;Password=Blueberry04!" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Program\ Files\ \(x86\)\\IIS\ Express\\FriendBoard\\FriendBoard\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

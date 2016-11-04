@@ -1,0 +1,138 @@
+﻿<div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a href="#register">register</a>
+                    </li>
+                    <li>
+                        <a href="#reviews">reviews</a>
+                    </li>
+                    <li>
+                        <a href="#index">login</a>
+                    </li>
+                    <li>
+                        <a href="#signOut">signOut</a>
+                    </li>
+                    <li>
+                        <a href="#board">board</a>
+                    </li>
+                    <li>
+                        <a href="#profile">profile</a>
+                    </li>
+                    <li>
+                        <a href="#admin">admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-sm-offset-4 loginBox">
+
+        <form ng-submit="login()">
+            <label for="username">User Name</label>
+            <input class="form-control" id="username" name="username" ng-model="username" type="text" placeholder="Username....." autofocus />
+
+            <label for="password">Password</label>
+            <input class="form-control" id="password" name="password" ng-model="password" type="password" placeholder="*....*" />
+            <span><input id="loginButton" class="btn btn-primary" type="submit" value="Login" /></span>
+        </form>
+
+    </div>
+
+    <div id="register">
+        <h4>Register Now!</h4>
+        <a href="#/register">Click here to register and start building your friendboard today!</a>
+    </div>
+
+
+
+
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="jumbotron well">
+                <h1>
+                    WELCOME TO LUNCHOLA!
+                </h1>
+                <blockquote><h2>"Say Hello! to Lunch!"</h2></blockquote>
+            </div>
+
+
+
+            <div class="row clearfix">
+
+
+                <div class="col-md-5 column" style="color: black; border: 5px solid black">
+                    <h3>USER: {{randomUser1.userName}}</h3>
+
+                    <p>Profile Type: {{randomUser1.userType}}</p>
+
+                    <div ng-show="kidMode1">
+                        <h3>KID</h3>
+                        <div ng-repeat="x in randomUser1Kids">
+                            <p>Alias: {{x.alias}}</p>
+                            <p>Grade: {{x.grade}}</p>
+                            <p>Diet Type: {{x.dietType}}</p>
+                        </div>
+                    </div>
+
+                    <!--<div ng-show="lunchMode1">
+                        <h3>LUNCH</h3>
+                        <div ng-repeat="x in randomUser1Lunches">
+                            <p>Dish Name: {{x.dishName}}</p>
+                            <p>Description: {{x.description}}</p>
+                            <p>$ {{x.price}}</p>
+                            <p>Reservations Made: {{x.reservations}}</p>
+                        </div>
+                    </div>-->
+
+                </div>
+
+                <div class="col-md-2 column">
+                    <div>
+                        <span class="glyphicon glyphicon-arrow-left"></span><br />
+                        <span class="glyphicon glyphicon-arrow-right"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-5 column" style="color: black; border: 5px solid black">
+
+                    <h3>USER: {{randomUser2.userName}}</h3>
+
+                    <p>Profile Type: {{randomUser2.userType}}</p>
+
+                    <!--<div ng-show="kidMode2">
+                        <h3>KID</h3>
+                        <div ng-repeat="x in randomUser2Kids">
+                            <p>Alias: {{x.alias}}</p>
+                            <p>Grade: {{x.grade}}</p>
+                            <p>Diet Type: {{x.dietType}}</p>
+                        </div>
+                    </div>-->
+
+                    <div ng-show="lunchMode2">
+                        <h3>LUNCH</h3>
+                        <div ng-repeat="x in randomUser2Lunches">
+                            <p>Dish Name: {{x.dishName}}</p>
+                            <p>Description: {{x.description}}</p>
+                            <p>$ {{x.price}}</p>
+                            <p>Reservations Made: {{x.reservations}}</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>

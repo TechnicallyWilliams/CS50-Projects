@@ -1,0 +1,90 @@
+﻿<form name="regForm" ng-submit="submit()" novalidate>
+    <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-3" style="margin: 0px; padding: 0px; border: 0px;">
+            <div id="register1">
+                <label>User Name</label>
+                <input type="text" name="uname" class="form-control" ng-model="formInfo.UserName" autofocus placeholder="required" required /><br />
+                <p ng-show="regForm.uname.$invalid && !regForm.uname.$pristine" class="help-block"></p>
+
+                <label>E-Mail</label>
+                <input type="email" name="email" class="form-control" ng-model="formInfo.Email" placeholder="AliceSmith@gmail.com" required /><br />
+                <p ng-show="regForm.email.$invalid && !regForm.email.$pristine" class="help-block"></p>
+
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" ng-model="formInfo.Password" placeholder="******" required /><br />
+                <p ng-show="regForm.password.$invalid && !regForm.password.$pristine" class="help-block"></p>
+
+                <label>Re-enter Password</label>
+                <input type="password" name="password" class="form-control" ng-model="formInfo.Password" placeholder="******" required /><br />
+                <p ng-show="regForm.password.$invalid && !regForm.password.$pristine" class="help-block"></p>
+
+                <label>Phone Number</label>
+                <div class="col-lg-12" style="margin: 0px; padding: 0px; border: 0px;">
+                    <div class="col-lg-3 text-left" style="text-align:left">
+                        <input type="text" name="area" class="form-control" ng-model="formInfo.AreaCode" placeholder="281" required />
+                    </div>
+
+                    <div class="col-lg-6 text-left" style="text-align:left">
+                        <input type="text" name="phone" class="form-control" ng-model="formInfo.Phone" placeholder="856-3462" required />
+                        <p ng-show="regForm.area.$invalid && !regForm.area.$pristine" class="help-block"></p>
+                        <p ng-show="regForm.phone.$invalid && !regForm.phone.$pristine" class="help-block"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-3" style="margin: 0px; padding: 0px; border: 0px;">
+            <div id="register2">
+
+                <label>Address Line 1</label>
+                <input type="text" name="address1" class="form-control" ng-model="formInfo.Address" placeholder="88 Logo St." required />
+                <p ng-show="regForm.address.$invalid && !regForm.address.$pristine" class="help-block"> Your Address is Required</p>
+
+                <label>Address Line 2</label>
+                <input type="text" name="address2" class="form-control" ng-model="formInfo.Address2" placeholder="Apt. 413" /><br />
+
+                <label>City</label>
+                <input type="text" name="city" class="form-control" ng-model="formInfo.City" placeholder="required" required /><br />
+                <p ng-show="regForm.city.$invalid && !regForm.city.$pristine" class="help-block"></p>
+
+                <!--<label>State</label>
+                <select id="stateSelect" name="stateSelect" style="color:black; font-weight:bold">
+                    <option ng-repeat="s in states" value="{{s.id}}">{{s.stateName}}</option>
+                </select><br />
+                <p ng-show="regForm.state.$invalid && !regForm.state.$pristine">Your State is required</p><br />-->
+
+
+                <label>Zip Code</label>
+                <input type="text" name="zip" class="form-control" ng-model="formInfo.Zip" placeholder="77095" required /><br />
+                <p ng-show="regForm.zip.$invalid && !regForm.zip.$pristine" class="help-block"></p>
+
+                <label>States</label>
+                <input type="text" name="zip" class="form-control" ng-model="formInfo.States" placeholder="MA" required /><br />
+                <p ng-show="regForm.state.$invalid && !regForm.state.$pristine" class="help-block">Your state is required</p>
+            </div>
+        </div>
+        <div class="col-lg-3" style="margin: 0px; padding: 0px; border: 0px;">
+            <button type="submit" class="btn btn-primary" ng-disabled="regForm.$invalid" style="margin-top: 20px;">Register Now</button>
+        </div>
+        <div class="col-lg-2" style="margin: 0px; padding: 0px; border: 0px;"></div>
+    </div>
+</form>
+<!---
+<div>
+
+    <form name="myForm" ng-submit="onFileSelect($files)" enctype="multipart/form-data">
+        <div>
+            <input type="file" ng-model="$files" accept="image/*">
+            <input type="submit" value='Upload' class="upload-button" />
+        </div>
+    </form>
+
+</div>
+
+<div class="btn btn-primary btn-upload"
+     upload-button
+     url="/upload"
+     on-success="onSuccess(response)">Upload</div> -->

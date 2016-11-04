@@ -1,0 +1,14 @@
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\FriendBoard.ViewModels.dll.config
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\FriendBoard.ViewModels.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\FriendBoard.ViewModels.pdb
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\EntityFramework.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\EntityFramework.xml
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\obj\Debug\FriendBoard.ViewModels.csprojResolveAssemblyReference.cache
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\obj\Debug\FriendBoard.ViewModels.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.ViewModels\obj\Debug\FriendBoard.ViewModels.pdb

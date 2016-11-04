@@ -1,0 +1,36 @@
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.dll.config
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.pdb
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\EntityFramework.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.Models.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.Models.pdb
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\EntityFramework.xml
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.csprojResolveAssemblyReference.cache
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.Migrations.Init.resources
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.csproj.GenerateResource.Cache
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.dll
+C:\Users\Alice\Desktop\OSS Notes\CS50 Projects\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.pdb
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.dll.config
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.dll
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.pdb
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\EntityFramework.dll
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.Models.dll
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\FriendBoard.Data.Models.pdb
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\EntityFramework.xml
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.Migrations._Init.resources
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.csproj.GenerateResource.Cache
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.dll
+C:\Program Files (x86)\IIS Express\FriendBoard\FriendBoard.Data\obj\Debug\FriendBoard.Data.pdb
