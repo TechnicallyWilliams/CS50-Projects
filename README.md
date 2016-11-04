@@ -21,8 +21,8 @@ Implemented a Web-based tool with which I could manage a portfolios of stocks. A
 
 # Week 9 - 12 (FINAL PROJECT)
  SPA that allows all users across the internet to finally add sounds to their static
- images and logos using File I/O functions from JavaScript to upload images and sound.
-    o   Uses Raw Sql in repository classes to reduce dependence on unnatural LINQ syntax
-    o   Uses parameterized Sql queries to prevent Sql Injection attacks
-    o   Requests direct access of users microphone and camera
-    o   Passes 64-bit encoded images/sounds to backend to then decode and store on server
+       images and logos using File I/O functions from JavaScript to upload images and sound.
+         o   Uses Raw Sql in repository classes to reduce dependence on unnatural LINQ syntax
+         o   Uses parameterized Sql queries to prevent Sql Injection attacks
+         o   Requests direct access of users microphone and camera
+         o   Passes 64-bit encoded images/sounds to backend to then decode and store on server
