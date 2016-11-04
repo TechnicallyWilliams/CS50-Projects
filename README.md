@@ -20,8 +20,8 @@ Implemented the following functions: - lookup()   - parse()   - query()   - load
 Implemented a Web-based tool with which I could manage a portfolios of stocks. Allowing me to check real stocks' actual prices and portfolios' values, and allowing me to buy (okay, "buy") and sell (fine, "sell") stocks!
 
 # Week 9 - 12 (FINAL PROJECT)
- SPA that allows all users across the internet to finally add sounds to their static
-       images and logos using File I/O functions from JavaScript to upload images and sound.
+ SPA that allows all users across the internet to finally add sounds to their static images and logos using File I/O functions from JavaScript to upload images and sound.
+ 
          o   Uses Raw Sql in repository classes to reduce dependence on unnatural LINQ syntax
          o   Uses parameterized Sql queries to prevent Sql Injection attacks
          o   Requests direct access of users microphone and camera
