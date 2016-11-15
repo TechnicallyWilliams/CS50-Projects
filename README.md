@@ -1,15 +1,20 @@
 # CS50 Projects
 
 # Week 4
-resize - Wrote a program called resize that resizes 24-bit uncompressed BMPs by a factor of n.
+copy - Used File i/o to copy bitmaps pixels to another one at a time and learned how to recognize the type of file by it’s internal as opposed to its file extension
 
-recover - Wrote a program that recovers JPEGs
+resize - Wrote a program called resize that resizes 24-bit uncompressed BMPs by a factor of n.Used File i/o to resize BMP images one pixel at a time and learned how to recognize bmp images by their internal signature as oppose to its file extension
+
+recover - Used File i/o to recover 50 jpegs images by recognizing it’s internal signature
+
 
 # Week 6
 Implemented the fastest spell-checker possible by reading words from a dictionary file, loading them into memory, spell checking them against a novel in the file, then unloading the dictionary from memory.
 
+Used File i/o to load a linked list into memory from a dictionary and spell check the entire contents of a book against the linked list using binary search. 
+
 Implemented the following functions: - check() - load() - size() - unload() 
-Data Structures: - Singly Linked Lists;
+Data Structures: - Singly Linked Lists; Algorithms: Binary Search
 
 # Week 7
 Implemented my own web server that serves static content (i.e., files ending in .html, .jpg, et al.) and dynamic content (i.e., files ending in .php).
